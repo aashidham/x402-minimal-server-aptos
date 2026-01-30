@@ -197,7 +197,6 @@ This format matches `@rvk_rishikesh/aptos` used in the workshop.
 ### No On-Chain Interaction on Server
 
 The server never touches the blockchain directly:
-- No Aptos SDK usage (could remove the dependency)
 - All on-chain operations delegated to facilitator
 - Only needs `PAYMENT_RECIPIENT_ADDRESS` for requirements
 
@@ -216,7 +215,8 @@ Instead of the hosted facilitator, you can run your own:
 
 ```bash
 # Terminal 1: Start local facilitator
-cd ../x402-minimal-facilitator
+git clone https://github.com/aashidham/x402-minimal-facilitator-aptos
+cd x402-minimal-facilitator
 npm start  # Runs on port 4022
 
 # Terminal 2: Start server pointing to local facilitator
