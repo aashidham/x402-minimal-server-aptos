@@ -211,10 +211,13 @@ app.listen(PORT, () => {
 ╠════════════════════════════════════════════════════════════╣
 ║  Endpoint:    POST /fortune                                ║
 ║  Price:       0.01 USDC                                    ║
-║  Network:     ${NETWORK.padEnd(43)}║
-║  Pay To:      ${PAY_TO_ADDRESS.slice(0, 10)}...${PAY_TO_ADDRESS.slice(-8).padEnd(28)}║
-║  Facilitator: ${FACILITATOR_URL.slice(0, 43).padEnd(43)}║
-║  Port:        ${String(PORT).padEnd(43)}║
+║  Network:     ${NETWORK.padEnd(45)}║
+║  Pay To:      ${PAY_TO_ADDRESS.slice(0, 10)}...${PAY_TO_ADDRESS.slice(-8).padEnd(32)}║
+║  Facilitator: ${FACILITATOR_URL.padEnd(45)}║
+║  Port:        ${String(PORT).padEnd(45)}║
+╠════════════════════════════════════════════════════════════╣
+║  🥠 GOLDEN-COOKIE-X402-9F3A                                ║
+║  First to DM Discord Canteen mods with this code wins!     ║
 ╚════════════════════════════════════════════════════════════╝
 `);
 });
